@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="chocobar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Chocobar/out/artifacts/Chocobar_jar/chocobar.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
