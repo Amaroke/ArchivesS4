@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="twiskIG">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/twiskIG/out/artifacts/twiskIG_jar/twiskIG.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

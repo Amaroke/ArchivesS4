@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chocobar/Chocobar.iml" filepath="$PROJECT_DIR$/Chocobar/Chocobar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IG.iml" filepath="$PROJECT_DIR$/.idea/IG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jeu 421/Jeu 421.iml" filepath="$PROJECT_DIR$/Jeu 421/Jeu 421.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twiskIG/twiskIG.iml" filepath="$PROJECT_DIR$/twiskIG/twiskIG.iml" />
+    </modules>
+  </component>
+</project>
