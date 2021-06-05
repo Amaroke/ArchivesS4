@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainborder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="605.0" prefWidth="751.0"
+            xmlns="http://javafx.com/javafx/11.0.2">
+    <top>
+        <fx:include fx:id="menu" source="Menu.fxml"/>
+    </top>
+    <center>
+        <fx:include fx:id="couverture" source="PagePresentation.fxml"/>
+    </center>
+    <left>
+        <fx:include fx:id="gauche" source="PageGauche.fxml" BorderPane.alignment="CENTER"/>
+    </left>
+    <right>
+        <fx:include fx:id="droite" source="PageDroite.fxml" BorderPane.alignment="CENTER" />
+    </right>
+</BorderPane>

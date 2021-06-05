@@ -1,0 +1,132 @@
+@startuml
+class controlleur.ControlleurPagePresentation {
+- Label titre
+- Label auteur
+- Label participants
+- Label dates
+~ void initialize()
++ void reagir()
+}
+class controlleur.ControlleurMenu {
+- Stage stage
+- MenuItem suppression
+- MenuItem suppressionActu
+- MenuItem titre
+- MenuItem description
+- MenuItem photo
+- MenuItem map
+~ void initialize()
++ void allerAPage()
++ void supprimerPage()
++ void supprimerPageActuelle()
++ void ajouterPage()
++ void modifierTitreCarnet()
++ void modifierAuteur()
++ void modifierDates()
++ void modifierParticipants()
++ void modifierTitrePage()
++ void modifierDescriptionPage()
++ void modifierPhotoPage()
++ void modifierMap()
++ void sauvegarderCarnet()
++ void chargerCarnet()
++ void quitterApplication()
++ void reagir()
+}
+class controlleur.ControlleurPageDroite {
+- Button boutonDroite
+~ void initialize()
++ void tournerPageDroite()
++ void reagir()
+}
+interface controlleur.Observateur {
+~ void reagir()
+}
+class controlleur.ControlleurPageJour {
+- Label titre
+- Label description
+- ImageView photo
+- Label numero
+- Pane map
+~ void initialize()
++ void setMap(double,double)
++ void reagir()
+}
+class controlleur.ControlleurPageGauche {
+- Button boutonGauche
++ void tournerPageGauche()
++ void reagir()
+}
+class carnet.SujetObserve {
++ void ajouterObservateur(Observateur)
++ void notifierObservateur()
+}
+class carnet.CarnetDeVoyage {
+- int pageActuelle
++ void ajouterPageJour()
++ PageJour getPageJourActuelle()
++ int getNbPagesJour()
++ int getPageActuelle()
++ void setPageActuelle(int)
++ ArrayList<PageJour> getPagesJour()
++ PagePresentation getPagePresentation()
++ void reSetPage()
++ void sauvegarde(File)
++ void chargement(File)
+}
+class carnet.PagePresentation {
+- ArrayList<String> participants
+- String auteur
+- String dateDebut
+- String dateFin
++ String getAuteur()
++ void modifierAuteur(String)
++ String getDateDebut()
++ void modifierDateDebut(String)
++ String getDateFin()
++ void modifierDateFin(String)
++ ArrayList<String> getParticipants()
++ void modifierParticipants(String)
+}
+abstract class carnet.Page {
+- String titre
+- int numeroPage
++ String getTitre()
++ void modifierTitre(String)
++ int getNumeroPage()
++ void setNumeroPage(int)
+}
+class carnet.PageJour {
+- String description
+- String photo
+- double x
++ String getDescription()
++ void modifierDescription(String)
++ String getPhoto()
++ void modifierPhoto(String)
++ double getX()
++ void setX(double)
++ double getY()
++ void setY(double)
+}
+
+
+controlleur.Observateur <|.. controlleur.ControlleurPagePresentation
+controlleur.Observateur <|.. controlleur.ControlleurMenu
+controlleur.Observateur <|.. controlleur.ControlleurPageDroite
+controlleur.Observateur <|.. controlleur.ControlleurPageJour
+controlleur.Observateur <|.. controlleur.ControlleurPageGauche
+carnet.SujetObserve <|-- carnet.CarnetDeVoyage
+carnet.Page <|-- carnet.PagePresentation
+carnet.Page <|-- carnet.PageJour
+carnet.CarnetDeVoyage -- "*" carnet.PageJour
+carnet.CarnetDeVoyage -- "1" carnet.PagePresentation
+carnet.SujetObserve -- "*" controlleur.Observateur
+controlleur.ControlleurPageGauche -- "1" carnet.CarnetDeVoyage
+controlleur.ControlleurPageGauche -- "1" carnet.PagePresentation
+controlleur.ControlleurPageJour -- "1" carnet.CarnetDeVoyage
+controlleur.ControlleurPageDroite -- "1" carnet.CarnetDeVoyage
+controlleur.ControlleurPageDroite -- "1" carnet.PageJour
+controlleur.ControlleurMenu -- "1" carnet.CarnetDeVoyage
+controlleur.ControlleurPagePresentation -- "1" carnet.CarnetDeVoyage
+@enduml

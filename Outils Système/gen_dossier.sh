@@ -1,0 +1,11 @@
+touch coucou.aux
+touch coucou.aux
+touch coucou.bbl
+touch coucou.bcf
+touch coucou.log
+touch coucou.fls
+touch coucou.toc
+touch coucou.cb2
+touch coucou.synctex.gz
+touch coucou.gls
+touch coucou.brf

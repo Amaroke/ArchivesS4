@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.2"
+      fx:controller="controlleur.ControlleurPageJour">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="titre" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="633.0"
+                   text="Titre">
+               <VBox.margin>
+                  <Insets/>
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0"/>
+               </padding>
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="description" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" prefWidth="500.0" text="Description par défaut sur beaucoup trop de lignes" wrapText="true">
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <font>
+                  <Font name="Liberation Mono Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox />
+            <ImageView fx:id="photo" fitHeight="300.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="numero" alignment="BOTTOM_RIGHT" prefHeight="72.0" prefWidth="500.0" text="Page x / x">
+               <padding>
+                  <Insets right="25.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Pane fx:id="map" layoutX="285.0" layoutY="332.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" opacity="0.6" prefHeight="175.0" prefWidth="225.0" />
+   </children>
+</Pane>

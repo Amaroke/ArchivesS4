@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="200.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/11.0.2"
+      fx:controller="controlleur.ControlleurPagePresentation">
+   <children>
+      <Label fx:id="titre" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="633.0" text="Titre">
+         <VBox.margin>
+            <Insets/>
+         </VBox.margin>
+         <padding>
+            <Insets top="20.0"/>
+         </padding>
+         <font>
+            <Font size="28.0"/>
+         </font>
+      </Label>
+      <Label fx:id="auteur" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="617.0" text="Auteur">
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="participants" contentDisplay="CENTER" prefHeight="16.0" prefWidth="645.0" text="Avec x, x et x">
+         <padding>
+            <Insets left="20.0" top="50.0" />
+         </padding>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/avion.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="dates" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="671.0" text="De x à x">
+         <padding>
+            <Insets right="25.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<Button xmlns:fx="http://javafx.com/fxml/1" fx:id="boutonDroite" contentDisplay="RIGHT" mnemonicParsing="false"
+        style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.2"
+        fx:controller="controlleur.ControlleurPageDroite" onAction="#tournerPageDroite">
+   <graphic>
+      <ImageView cache="true" fitHeight="61.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/flecheNavigation.png"/>
+         </image>
+      </ImageView>
+   </graphic>
+</Button>

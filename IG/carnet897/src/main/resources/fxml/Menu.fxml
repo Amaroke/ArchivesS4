@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<MenuBar xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.2"
+         fx:controller="controlleur.ControlleurMenu">
+   <menus>
+      <Menu mnemonicParsing="false" text="Carnet">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#allerAPage" text="Se rendre à une page spécifique"/>
+            <MenuItem fx:id="suppression" mnemonicParsing="false" onAction="#supprimerPage"
+                      text="Supprimer une page spécifique"/>
+            <MenuItem fx:id="suppressionActu" mnemonicParsing="false" onAction="#supprimerPageActuelle"
+                      text="Supprimer la page actuelle"/>
+            <MenuItem mnemonicParsing="false" onAction="#ajouterPage" text="Ajouter une page à la suite"/>
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Édition">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#modifierTitreCarnet" text="Modifier le titre du carnet"/>
+            <MenuItem mnemonicParsing="false" onAction="#modifierAuteur" text="Modifier l'auteur"/>
+            <MenuItem mnemonicParsing="false" onAction="#modifierDates" text="Modifier les dates"/>
+            <MenuItem mnemonicParsing="false" onAction="#modifierParticipants" text="Modifier les participants"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem fx:id="titre" mnemonicParsing="false" onAction="#modifierTitrePage"
+                      text="Modifier le titre de la page"/>
+            <MenuItem fx:id="description" mnemonicParsing="false" onAction="#modifierDescriptionPage"
+                      text="Modifier la description de la page"/>
+            <MenuItem fx:id="photo" mnemonicParsing="false" onAction="#modifierPhotoPage"
+                      text="Modifier la photo de la page"/>
+            <MenuItem fx:id="map" mnemonicParsing="false" onAction="#modifierMap"
+                      text="Modifier la map de la page"/>
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Sauvegarde">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#sauvegarderCarnet" text="Sauvegarder le carnet" />
+            <MenuItem mnemonicParsing="false" onAction="#chargerCarnet" text="Charger un carnet" />
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Quitter">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#quitterApplication" text="Fermer l'application" />
+         </items>
+      </Menu>
+   </menus>
+</MenuBar>
